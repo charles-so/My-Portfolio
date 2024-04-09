@@ -1,0 +1,9 @@
+@tailwind base;
+
+/* Prevent unwanted Layout Shifts caused by Scrollbars */
+html {
+    scrollbar-gutter: stable;
+}
+
+@tailwind components;
+@tailwind utilities;
