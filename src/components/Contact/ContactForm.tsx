@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
     setIsSending(true); // Start the loading animation
 
     try {
-      await axios.post('http://localhost:3000/send-email', {
+      await axios.post('https://sendemail.charleso.site/send-email', {
         firstname: firstName,
         lastname: lastName,
         email: email,
