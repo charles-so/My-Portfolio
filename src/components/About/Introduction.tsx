@@ -20,7 +20,7 @@ const Introduction: React.FC<IntroductionProps> = ({ scrollToBackground }) => {
         <div className="text-center lg:text-left">
           <h2 className="text-3xl font-bold mb-4">{introHeader}</h2>
           <p className="text-lg pb-5">{introMessage}</p>
-          <a href="/path/to/resume" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View My Resume</a>
+          <a href="https://nextcloud.charleso.site/s/i2wYEgxTbEN4C6Q" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View My Resume</a>
         </div>
       </div>
       <div>

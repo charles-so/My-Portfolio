@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   // My social media URLs
-  const twitterUrl: string = 'https://twitter.com/your_twitter_username';
-  const githubUrl: string = 'https://github.com/your_github_username';
-  const linkedinUrl: string = 'https://www.linkedin.com/in/your_linkedin_username';
-  const instagramUrl: string = 'https://www.instagram.com/your_instagram_username';
+  const twitterUrl: string = 'https://twitter.com/NgolamSo';
+  const githubUrl: string = 'https://github.com/charles-so';
+  const linkedinUrl: string = 'https://www.linkedin.com/in/ngolam-charlesso/';
+  const instagramUrl: string = 'https://www.instagram.com/ngolam.charles.so/';
 
   // Function to open a link in a new tab
   const openNewTab = (url: string): void => {
