@@ -1,23 +1,25 @@
 import express from 'express';
-import nodemailer from 'nodemailer';
+import { createTransport } from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import dotenv from 'dotenv';
+import { config } from 'dotenv';
 
-dotenv.config();
+const { urlencoded, json } = bodyParser;
+
+config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(urlencoded({ extended: false }));
+app.use(json());
 
 app.use(cors());
 
 app.post('/send-email', (req, res) => {
     const { firstname, lastname, email, subject, text } = req.body;
 
-    const transporter = nodemailer.createTransport({
+    const transporter = createTransport({
         service: 'gmail',
         auth: {
             user: process.env.EMAIL_USER,

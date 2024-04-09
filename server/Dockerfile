@@ -11,4 +11,4 @@ COPY . .
 EXPOSE 3000
 
 # Set the command to run the preview server
-CMD ["npm", "index.js"]
+CMD ["npm", "start"]
